@@ -129,7 +129,9 @@ html {
 figure img {
     max-width: 100%;
     height: auto;
+    width: 1400px;
     margin: 10px auto;
+    border-radius: 6px;
 }
 
 img.center {
@@ -176,39 +178,13 @@ nav {
     text-align: center;
 }
 
-.home-image {
-    background-image: url(../images/thiswayupsmall.jpg);
-    background-size: 100%;
-    height: 150px;
-    width: 200px;
-    padding: 0 5px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-    *display: inline; /*IE7*/
-    text-decoration: none;
-    font-size: 35px;
-    font-family: 'Exo', sans-serif;
-}
-
-.home-image:hover {
-    height: 120px;
-}
-
-.home-text {   
-    color: #EFF3F2;
-    background-color: #1f1f1f;
-  
-}
 
 #ldn {
     background-image: url(../images/london/gherkin.jpg);
     background-size: 100%;
-    height: 200px;
-    width: 200px;
+    height: 450px;
+    width: 450px;
+    border-radius: 6px;
 }
 
 #ldn:hover {
@@ -218,8 +194,9 @@ nav {
 #sel {
     background-image: url(../images/seoul/pointing.jpg);
     background-size: 100%;
-    height: 200px;
-    width: 200px;
+    height: 450px;
+    width: 450px;
+    border-radius: 6px;
 }
 
 #sel:hover {
@@ -229,8 +206,9 @@ nav {
 #melb {
     background-image: url(../images/melbourne/something.jpg);
     background-size: 100%;
-    height: 200px;
-    width: 200px;
+    height: 450px;
+    width: 450px;
+    border-radius: 6px;
 }
 
 #melb:hover {
@@ -257,11 +235,57 @@ nav {
     color: #EFF3F2;
 }
 
-.floated-img {
-    float: left;
-    margin: 50px 50px 50px 50px;
+.grid {
+    padding: 50px;
+    overflow: hidden;
 }
-ls
+
+.grid li {
+    float: left;
+    width: 45%;
+    margin: 20px 2.5%;
+    list-style-type: none;
+}
+
+.grid img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.grid li:nth-child(odd) {
+    clear: left;
+}
+
+.home-image {
+    background-image: url(../images/thiswayupsmall.jpg);
+    background-size: 100%;
+    height: 150px;
+    width: 200px;
+    padding: 0 5px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    *display: inline; /*IE7*/
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Exo', sans-serif;
+    border-radius: 6px;
+}
+
+.home-image:hover {
+    height: 120px;
+}
+
+.home-text {   
+    color: #EFF3F2;
+    background-color: #1f1f1f;
+  
+}
 
 
 
